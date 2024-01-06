@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com Eventos no JavaScript</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>Trabalhando com Eventos no JavaScript</h1>
@@ -12,13 +12,14 @@
 
     <h2>Registre-se!</h2>
     <section>
-        <label for="username">Nome do Usuario</label>
+        <label for="username">Nome do Usuario:</label>
         <input type="text" name="username" id="username">
-        <label for="password">Senha</label>
+        <label for="password">Senha:</label>
         <input type="password" name="password" id="password">
-        <label for="passwordConfirmation">Confirme a senha</label>
+        <label for="passwordConfirmation">Confirme a senha:</label>
         <input type="password" name="passwordConfirmation" id="passwordConfirmation">
-        <button onclick="register(this.parentNode)">Registrar</button> <!-- this, referencia ao próprio objeto-->
+        <button id="register-button">Registrar</button>
+        <button onclick="removeListener()">Remover Event Listener</button>
     </section>
 </body>
 </body>
