@@ -8,6 +8,7 @@ function useDarkTeheme() {
     document.body.style.backgroundColor = '#212529'
 }
 
+// classList.toggle - adiciona uma classe ao input caso não exista e remove caso exista
 function switchTheme() {
     document.body.classList.toggle('is-light')
     document.body.classList.toggle('is-dark')
